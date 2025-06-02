@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Indian Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <div class="flex items-center space-x-3">
+                            <!-- Stylish Travel Logo -->
+                            <div class="relative">
+                                <svg class="w-12 h-12" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Outer Circle -->
+                                    <circle cx="25" cy="25" r="23" class="stroke-blue-600 stroke-2"/>
+                                    <!-- Compass Points -->
+                                    <path d="M25 5L28 22M25 45L22 28M45 25L28 28M5 25L22 22" class="stroke-blue-600 stroke-2"/>
+                                    <!-- Mountain Silhouette -->
+                                    <path d="M15 35L25 15L35 35H15Z" class="fill-blue-600"/>
+                                    <!-- Sun/Moon -->
+                                    <circle cx="25" cy="25" r="5" class="fill-white"/>
+                                    <!-- Aircraft Path -->
+                                    <path d="M12 18C22 28 28 22 38 12" class="stroke-blue-600 stroke-2" stroke-dasharray="2 2"/>
+                                    <!-- Small Plane -->
+                                    <path d="M35 15L38 12L35 9L32 12L35 15Z" class="fill-blue-600"/>
+                                </svg>
+                            </div>
+                            <!-- Company Name with Gradient -->
+                            <div class="flex flex-col">
+                                <span class="font-bold text-2xl text-blue-600">Indian Tours</span>
+                                <span class="text-xs text-gray-500">Discover Incredible India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                        <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">About</a>
+                        <a href="destinations.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Destinations</a>
+                        <a href="packages.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Packages</a>
+                        <a href="contact.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="booking.html" class="py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="pt-32 pb-20 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Add this after the title and before the contact information grid -->
+            <div class="text-center mb-12">
+                <div class="mb-8">
+                    <!-- Decorative Contact Graphic -->
+                    <div class="relative w-32 h-32 mx-auto">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Circle -->
+                            <circle cx="50" cy="50" r="48" class="fill-blue-50 stroke-blue-500 stroke-2"/>
+                            
+                            <!-- Contact Icons -->
+                            <g class="transform -rotate-12">
+                                <!-- Phone -->
+                                <circle cx="50" cy="35" r="15" class="fill-blue-100 stroke-blue-500 stroke-2"/>
+                                <path d="M45 35C45 32 47 30 50 30C53 30 55 32 55 35C55 38 53 40 50 40C47 40 45 38 45 35Z" class="fill-blue-500"/>
+                                
+                                <!-- Message Bubbles -->
+                                <circle cx="35" cy="60" r="10" class="fill-green-100 stroke-green-500 stroke-2"/>
+                                <circle cx="65" cy="60" r="10" class="fill-green-100 stroke-green-500 stroke-2"/>
+                                
+                                <!-- Connection Lines -->
+                                <path d="M35 50L50 35L65 50" class="stroke-blue-400 stroke-2 stroke-dasharray-2"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-semibold mb-4">Contact Us</h1>
+                <p class="text-gray-600">Get in touch with us for the best travel experience</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Information -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-6">Contact Information</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold">Address</h3>
+                                <p class="text-gray-600">Biswanath, Assam, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-phone text-blue-600 mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold">Phone</h3>
+                                <p class="text-gray-600">+91 8011960936</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-envelope text-blue-600 mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold">Email</h3>
+                                <p class="text-gray-600">rahulpradhan6439@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-clock text-blue-600 mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold">Working Hours</h3>
+                                <p class="text-gray-600">24/7 Available</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="mt-8">
+                        <h3 class="font-semibold mb-4">Connect With Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-blue-600">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-pink-600">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="https://wa.me/918011960936" class="text-gray-600 hover:text-green-600">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Contact -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-6">Quick Contact</h2>
+                    <div class="space-y-6">
+                        <!-- WhatsApp Contact -->
+                        <div class="text-center">
+                            <i class="fab fa-whatsapp text-5xl text-green-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Contact via WhatsApp</h3>
+                            <p class="text-gray-600 mb-4">Get quick responses through WhatsApp</p>
+                            <a href="https://wa.me/918011960936" 
+                               target="_blank"
+                               class="inline-block w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Message on WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Direct Call -->
+                        <div class="text-center mt-8">
+                            <i class="fas fa-phone-alt text-5xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Call Us Directly</h3>
+                            <p class="text-gray-600 mb-4">Talk to our travel experts</p>
+                            <a href="tel:+918011960936" 
+                               class="inline-block w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
+                                <i class="fas fa-phone mr-2"></i>
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Indian Tours</h3>
+                    <p class="text-gray-400">Your trusted Indian travel partner since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white">Tour Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Email: rahulpradhan6439@gmail.com</li>
+                        <li>Phone: +91 8011960936</li>
+                        <li>Contact: Rahul Pradhan</li>
+                        <li>Address: Assam,Biswanath</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Indian Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

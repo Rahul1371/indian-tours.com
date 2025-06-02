@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Indian Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <div class="flex items-center space-x-3">
+                            <!-- Stylish Travel Logo -->
+                            <div class="relative">
+                                <svg class="w-12 h-12" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Outer Circle -->
+                                    <circle cx="25" cy="25" r="23" class="stroke-blue-600 stroke-2"/>
+                                    <!-- Compass Points -->
+                                    <path d="M25 5L28 22M25 45L22 28M45 25L28 28M5 25L22 22" class="stroke-blue-600 stroke-2"/>
+                                    <!-- Mountain Silhouette -->
+                                    <path d="M15 35L25 15L35 35H15Z" class="fill-blue-600"/>
+                                    <!-- Sun/Moon -->
+                                    <circle cx="25" cy="25" r="5" class="fill-white"/>
+                                    <!-- Aircraft Path -->
+                                    <path d="M12 18C22 28 28 22 38 12" class="stroke-blue-600 stroke-2" stroke-dasharray="2 2"/>
+                                    <!-- Small Plane -->
+                                    <path d="M35 15L38 12L35 9L32 12L35 15Z" class="fill-blue-600"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Company Name with Gradient -->
+                            <div class="flex flex-col">
+                                <span class="font-bold text-2xl text-blue-600">
+                                    Indian Tours
+                                </span>
+                                <span class="text-xs text-gray-500">Discover Incredible India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                        <a href="about.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600">About</a>
+                        <a href="destinations.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Destinations</a>
+                        <a href="packages.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Packages</a>
+                        <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="booking.html" class="py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 60vh;">
+        <!-- Header Background Image -->
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" 
+             style="background-image: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <h1 class="text-white font-semibold text-5xl mb-6">
+                        About Indian Tours
+                    </h1>
+                    <p class="text-white text-lg">
+                        Your trusted Indian travel partner since 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-semibold mb-4">Our Story</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded in 2023, Indian Tours has been at the forefront of creating unforgettable travel experiences across India. We believe that every journey should be unique and memorable, tailored to your individual preferences and dreams.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Our team of experienced travel experts works tirelessly to curate the perfect itineraries, combining popular destinations with hidden gems that only locals know about.
+                    </p>
+                </div>
+                <!-- Our Story Section Image -->
+                <div class="w-full md:w-1/2 px-4">
+                    <img src="https://images.unsplash.com/photo-1606046604972-77cc76aee944" 
+                         alt="Traditional Indian Tourism" 
+                         class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-12">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Expert Knowledge</h3>
+                    <p class="text-gray-600">Our team has extensive experience and knowledge of destinations worldwide.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Best Value</h3>
+                    <p class="text-gray-600">We offer competitive prices without compromising on quality.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock assistance for all your travel needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <!-- Our Mission Section Image -->
+                <div class="w-full md:w-1/2 px-4">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada" 
+                         alt="Indian Heritage" 
+                         class="rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 px-4 mt-8 md:mt-0">
+                    <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
+                    <p class="text-gray-600 mb-4">
+                        At Indian Tours, our mission is to showcase the incredible diversity and rich cultural heritage of India while providing unforgettable travel experiences that create lasting memories for our guests.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Promote sustainable and responsible tourism</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Support local communities and preserve cultural heritage</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Deliver exceptional customer service and personalized experiences</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Custom Tours</h3>
+                    <p class="text-gray-600">Personalized itineraries tailored to your preferences and schedule.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Luxury Stays</h3>
+                    <p class="text-gray-600">Premium accommodations in heritage hotels and luxury resorts.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Transportation</h3>
+                    <p class="text-gray-600">Comfortable and reliable transportation throughout your journey.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Expert Guides</h3>
+                    <p class="text-gray-600">Knowledgeable local guides who bring destinations to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Expertise Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold">Our Expertise</h2>
+                <p class="text-gray-600 mt-4">Specializing in various types of tours across India</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cultural Tours -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc" 
+                         alt="Cultural Tours" 
+                         class="w-full h-64 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-semibold mb-2">Cultural Tours</h3>
+                            <p>Explore India's rich heritage and traditions</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adventure Tours -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" 
+                         alt="Adventure Tours" 
+                         class="w-full h-64 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-semibold mb-2">Adventure Tours</h3>
+                            <p>Thrilling experiences in the great outdoors</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wellness Tours -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be" 
+                         alt="Wellness Tours" 
+                         class="w-full h-64 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-semibold mb-2">Wellness Tours</h3>
+                            <p>Rejuvenating experiences for mind and body</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold">Get in Touch</h2>
+                <p class="text-gray-600">Message us directly on WhatsApp</p>
+            </div>
+            <div class="max-w-lg mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="mb-6">
+                        <i class="fab fa-whatsapp text-6xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Chat with Us</h3>
+                    <p class="text-gray-600 mb-6">Quick responses through WhatsApp</p>
+                    <a href="https://wa.me/918011960936" 
+                       target="_blank"
+                       class="inline-flex items-center justify-center w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Message on WhatsApp
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        Available 24/7
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Indian Tours</h3>
+                    <p class="text-gray-400">Your trusted Indian travel partner since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white">Tour Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="space-y-4">
+                        <a href="https://wa.me/918011960936" 
+                           target="_blank" 
+                           class="flex items-center text-gray-400 hover:text-white">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp: +91 8011960936
+                        </a>
+                        <a href="tel:+918011960936" 
+                           class="flex items-center text-gray-400 hover:text-white">
+                            <i class="fas fa-phone mr-2"></i>Call: +91 8011960936
+                        </a>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Indian Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

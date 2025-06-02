@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tours - Discover Incredible India</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .carousel-item {
+            display: none;
+            animation: fadeIn 1s ease-in;
+            height: 100vh; /* Full viewport height */
+        }
+        
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <div class="flex items-center space-x-3">
+                            <!-- Stylish Travel Logo -->
+                            <div class="relative">
+                                <svg class="w-12 h-12" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Outer Circle -->
+                                    <circle cx="25" cy="25" r="23" class="stroke-blue-600 stroke-2"/>
+                                    <!-- Compass Points -->
+                                    <path d="M25 5L28 22M25 45L22 28M45 25L28 28M5 25L22 22" class="stroke-blue-600 stroke-2"/>
+                                    <!-- Mountain Silhouette -->
+                                    <path d="M15 35L25 15L35 35H15Z" class="fill-blue-600"/>
+                                    <!-- Sun/Moon -->
+                                    <circle cx="25" cy="25" r="5" class="fill-white"/>
+                                    <!-- Aircraft Path -->
+                                    <path d="M12 18C22 28 28 22 38 12" class="stroke-blue-600 stroke-2" stroke-dasharray="2 2"/>
+                                    <!-- Small Plane -->
+                                    <path d="M35 15L38 12L35 9L32 12L35 15Z" class="fill-blue-600"/>
+                                </svg>
+                            </div>
+                            <!-- Company Name with Gradient Text -->
+                            <div class="flex flex-col">
+                                <span class="font-bold text-2xl bg-gradient-to-r from-blue-600 to-blue-400 text-transparent bg-clip-text">Indian Tours</span>
+                                <span class="text-xs text-gray-500">Discover Incredible India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600">Home</a>
+                        <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">About</a>
+                        <a href="destinations.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Destinations</a>
+                        <a href="packages.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Packages</a>
+                        <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="https://wa.me/918011960936" class="py-2 px-4 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i>Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen">
+        <div class="absolute top-0 w-full h-full carousel">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" 
+                     alt="Taj Mahal" 
+                     class="carousel-image">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" 
+                     alt="Kerala Backwaters" 
+                     class="carousel-image">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944" 
+                     alt="Varanasi Ghats" 
+                     class="carousel-image">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+        </div>
+        <!-- Add navigation buttons -->
+        <button class="absolute left-4 z-10 text-white text-4xl hover:text-blue-500 transition duration-300" onclick="moveSlide(-1)">❮</button>
+        <button class="absolute right-4 z-10 text-white text-4xl hover:text-blue-500 transition duration-300" onclick="moveSlide(1)">❯</button>
+        
+        <div class="container relative mx-auto z-10">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <h1 class="text-white font-semibold text-5xl mb-6">
+                        Discover Incredible India
+                    </h1>
+                    <p class="text-white text-lg mb-8">
+                        Experience the magic of Indian culture, heritage, and landscapes
+                    </p>
+                    <a href="packages.html" class="bg-blue-600 text-white font-bold px-6 py-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Explore Packages
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Destinations -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-12">Popular Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Taj Mahal -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-destination="taj mahal">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Taj Mahal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Taj Mahal, Agra</h3>
+                        <p class="text-gray-600 mb-4">A stunning symbol of eternal love, this white marble masterpiece is one of the world's most iconic landmarks.</p>
+                        <a href="https://wa.me/918011960936" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            Book Tour <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kerala Backwaters -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-destination="kerala">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944" alt="Kerala Backwaters" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kerala Backwaters</h3>
+                        <p class="text-gray-600 mb-4">Experience tranquility in the serene backwaters, surrounded by palm trees and traditional houseboats.</p>
+                        <a href="https://wa.me/918011960936" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            Book Tour <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Varanasi Ghats -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-destination="varanasi">
+                    <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc" alt="Varanasi Ghats" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Varanasi Ghats</h3>
+                        <p class="text-gray-600 mb-4">Witness the spiritual heart of India along the sacred Ganges River with ancient rituals and traditions.</p>
+                        <a href="https://wa.me/918011960936" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            Book Tour <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jaipur -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-destination="jaipur">
+                    <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41" alt="Jaipur" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Pink City, Jaipur</h3>
+                        <p class="text-gray-600 mb-4">Explore the majestic palaces and forts of Rajasthan's capital, known for its rich royal heritage.</p>
+                        <a href="https://wa.me/918011960936" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            Book Tour <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Goa Beaches -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-destination="goa">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2" alt="Goa" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Goa Beaches</h3>
+                        <p class="text-gray-600 mb-4">Relax on pristine beaches, enjoy water sports, and experience the unique Portuguese-influenced culture.</p>
+                        <a href="https://wa.me/918011960936" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            Book Tour <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kaziranga National Park -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-destination="kaziranga">
+                    <img src="https://images.unsplash.com/photo-1577114995803-d8ce0e2b4aa9" alt="Kaziranga" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kaziranga National Park</h3>
+                        <p class="text-gray-600 mb-4">Home to the great one-horned rhinoceros and diverse wildlife in the heart of Assam.</p>
+                        <a href="https://wa.me/918011960936" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            Book Tour <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Indian Tours</h3>
+                    <p class="text-gray-400">Your trusted Indian travel partner since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white">Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><i class="fas fa-envelope mr-2"></i>rahulpradhan6439@gmail.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+91 8011960936</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Biswanath, Assam, India</li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918011960936" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Indian Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this script before closing body tag -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("carousel-item");
+        
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].classList.add("active");
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        
+        function moveSlide(n) {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex += n;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            if (slideIndex < 1) {slideIndex = slides.length}
+            slides[slideIndex-1].classList.add("active");
+        }
+        
+        function handleSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const searchTerm = searchInput.value.toLowerCase();
+            const destinations = {
+                'taj mahal': '#taj-mahal',
+                'kerala': '#kerala-backwaters',
+                'varanasi': '#varanasi-ghats',
+                'jaipur': '#pink-city',
+                'goa': '#goa-beaches',
+                'kaziranga': '#kaziranga'
+            };
+
+            // Check if search term matches any destination
+            for (const [key, value] of Object.entries(destinations)) {
+                if (searchTerm.includes(key)) {
+                    // Scroll to the destination card
+                    const element = document.querySelector(`[data-destination="${key}"]`);
+                    if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                    }
+                    break;
+                }
+            }
+        }
+
+        // Initialize the carousel
+        showSlides();
+    </script>
+</body>
+</html>
